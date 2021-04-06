@@ -1,5 +1,7 @@
-for (i = 0; i < 100; i++) {
-    if(i % 3==0){
-        console.log(i);
-    }
-}
+for (
+hi = 0; 
+hi < 100; 
+hi++)
+    
+if (hi % 2 == 0)
+    console.log(hi);
