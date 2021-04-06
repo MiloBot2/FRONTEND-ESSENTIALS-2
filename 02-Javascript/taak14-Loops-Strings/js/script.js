@@ -1,9 +1,10 @@
-function outputLetters(str){
-    for (let i = 0; i < str.length; i++) {
-        const element = array[i];
-        
-    }
+let what = prompt("Voer hier een zin in:")
+
+function outputLetters(str) {
+    let output = 0;
+    for (let i = 0; i < str.length; i++)
+        output++;
+    return output;
 }
 
-var voorbeeldString = "Dit is een array van letters";
-console.log(voorbeeldString.length); // geeft terug: 
+console.log(outputLetters(what));
