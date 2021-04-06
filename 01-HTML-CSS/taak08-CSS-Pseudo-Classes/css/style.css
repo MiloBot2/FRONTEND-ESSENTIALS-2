@@ -3,11 +3,19 @@
     margin: 0;
 }
 
-.menu li{
+.menu li
+{
+    padding-left: 11.75%;
     display: inline-block;
 }
 
-.menu li a{
-    background-color: lightskyblue;
+.menu li a
+{
+    background-color: red;
     padding: 10px;
+}
+
+.menu li a:hover
+{
+    background-color: yellow;
 }

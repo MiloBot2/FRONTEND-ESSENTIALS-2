@@ -13,3 +13,8 @@ td{
     border-radius: 5px;
     padding: 10px;
 }
+
+.set {
+    color: white;
+    background: blue;
+}

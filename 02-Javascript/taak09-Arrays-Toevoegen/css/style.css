@@ -18,3 +18,7 @@ body{
     color: black;
     cursor: pointer;
 }
+
+.striked {
+    text-decoration: line-through;
+}

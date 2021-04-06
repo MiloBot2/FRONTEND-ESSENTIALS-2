@@ -1,16 +1,20 @@
-body{
+body
+{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container{
+.container
+{
     display: flex;
 }
 
-button{
+button
+{
     margin: 5px;
 }
 
-.blokje{
+.blokje
+{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +31,8 @@ button{
     border: 5px solid green;
 }
 
-.score{
+.score
+{
     color: darkblue;
     background-color: lightskyblue;
     border: 5px solid blue; 
