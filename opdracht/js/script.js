@@ -50,10 +50,10 @@ function vermenigvuldigCodewoord(strInput, strCodewoord) {
 
     //TODO: opdracht 2
     for (let m = 0; m < intDiv; m++) {
-        outputString = outputString + strCodewoord;
+        outputString += strCodewoord;
     }
     for (let n = 0; n < intMod; n++) {
-        outputString = outputString + strCodewoord[n];
+        outputString += strCodewoord[n];
     }
     console.log("Codewoord full: " + outputString);
     return outputString;
