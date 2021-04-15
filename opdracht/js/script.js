@@ -30,9 +30,9 @@ function positiesNaarString(arr) {
     for (let k = 0; k < arr.length; k++) {
         let ding = arr[k];
         let oke = strAlfabet[ding];
-        for (let l = 0; l < letter.length; l++) {
+
+        for (let l = 0; l < oke.length; l++)
             outputString += oke;
-        }
     }
     return outputString;
 }
@@ -49,12 +49,12 @@ function vermenigvuldigCodewoord(strInput, strCodewoord) {
     var intMod = inputLength % codewoordLength; //het aantal letters dat overblijft die nog moeten worden aangevuld
 
     //TODO: opdracht 2
-    for (let m = 0; m < intDiv; m++) {
+    for (let m = 0; m < intDiv; m++)
         outputString += strCodewoord;
-    }
-    for (let n = 0; n < intMod; n++) {
+
+    for (let n = 0; n < intMod; n++)
         outputString += strCodewoord[n];
-    }
+
     console.log("Codewoord full: " + outputString);
     return outputString;
 }
@@ -75,12 +75,10 @@ function versleutel() {
 
     outputArray = [];
     for (let i = 0; i < arrInputPosities.length; i++) {
-        if (arrInputPosities[i] + arrCodewoordPosities[i] > strAlfabet.length) {
+        if (arrInputPosities[i] + arrCodewoordPosities[i] > strAlfabet.length)
             outputArray.push((arrInputPosities[i] + arrCodewoordPosities[i]) - strAlfabet.length);
-        }
-        else {
+        else
             outputArray.push(arrInputPosities[i] + arrCodewoordPosities[i]);
-        }
     }
     console.log("versleuteld bericht: " + positiesNaarString(outputArray));
     document.querySelector("#output").value = positiesNaarString(outputArray);
@@ -103,12 +101,10 @@ function ontsleutel() {
 
     outputArray = [];
     for (let i = 0; i < arrInputPosities.length; i++) {
-        if (arrInputPosities[i] - arrCodewoordPosities[i] < 0) {
+        if (arrInputPosities[i] - arrCodewoordPosities[i] < 0)
             outputArray.push((arrInputPosities[i] - arrCodewoordPosities[i]) + strAlfabet.length);
-        }
-        else {
+        else
             outputArray.push(arrInputPosities[i] - arrCodewoordPosities[i]);
-        }
     }
     document.querySelector("#output").value = positiesNaarString(outputArray);
     strCodewoordFull = [];
